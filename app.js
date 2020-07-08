@@ -63,7 +63,7 @@ canvasButtons.forEach(function (buttons) {
         gameOver.style.display = "flex";
         gameOver.style.opacity = "1";
         animation(buttonsArray);
-       
+
         if (colorToggle % 2 == 0) {
           gameOver.innerHTML +=
             '<p style="font-size:2em">Blue Player Wins!</p>';
@@ -101,11 +101,12 @@ canvas.addEventListener("click", function () {
   }
 });
 button1.addEventListener("click", function () {
-  if (colorToggle % 2 == 0) {
+  if (colorToggle % 2 == 0 && b1 == undefined) {
     b1 = "x";
-  } else {
+  } else if (b1 == undefined) {
     b1 = "o";
   }
+  console.log(b1);
   rowArray = [
     [b1, b2, b3],
     [b4, b5, b6],
@@ -122,9 +123,9 @@ button1.addEventListener("click", function () {
   ];
 });
 button2.addEventListener("click", function () {
-  if (colorToggle % 2 == 0) {
+  if (colorToggle % 2 == 0 && b2 == undefined) {
     b2 = "x";
-  } else {
+  } else if (b2 == undefined) {
     b2 = "o";
   }
   rowArray = [
@@ -143,9 +144,9 @@ button2.addEventListener("click", function () {
   ];
 });
 button3.addEventListener("click", function () {
-  if (colorToggle % 2 == 0) {
+  if (colorToggle % 2 == 0 && b3 == undefined) {
     b3 = "x";
-  } else {
+  } else if (b3 == undefined) {
     b3 = "o";
   }
   rowArray = [
@@ -164,9 +165,9 @@ button3.addEventListener("click", function () {
   ];
 });
 button4.addEventListener("click", function () {
-  if (colorToggle % 2 == 0) {
+  if (colorToggle % 2 == 0 && b4 == undefined) {
     b4 = "x";
-  } else {
+  } else if (b4 == undefined) {
     b4 = "o";
   }
   rowArray = [
@@ -185,9 +186,9 @@ button4.addEventListener("click", function () {
   ];
 });
 button5.addEventListener("click", function () {
-  if (colorToggle % 2 == 0) {
+  if (colorToggle % 2 == 0 && b5 == undefined) {
     b5 = "x";
-  } else {
+  } else if (b5 == undefined) {
     b5 = "o";
   }
   rowArray = [
@@ -206,9 +207,9 @@ button5.addEventListener("click", function () {
   ];
 });
 button6.addEventListener("click", function () {
-  if (colorToggle % 2 == 0) {
+  if (colorToggle % 2 == 0 && b6 == undefined) {
     b6 = "x";
-  } else {
+  } else if (b6 == undefined) {
     b6 = "o";
   }
   rowArray = [
@@ -227,9 +228,9 @@ button6.addEventListener("click", function () {
   ];
 });
 button7.addEventListener("click", function () {
-  if (colorToggle % 2 == 0) {
+  if (colorToggle % 2 == 0 && b7 == undefined) {
     b7 = "x";
-  } else {
+  } else if (b7 == undefined) {
     b7 = "o";
   }
   rowArray = [
@@ -248,9 +249,9 @@ button7.addEventListener("click", function () {
   ];
 });
 button8.addEventListener("click", function () {
-  if (colorToggle % 2 == 0) {
+  if (colorToggle % 2 == 0 && b8 == undefined) {
     b8 = "x";
-  } else {
+  } else if (b8 == undefined) {
     b8 = "o";
   }
   rowArray = [
@@ -269,9 +270,9 @@ button8.addEventListener("click", function () {
   ];
 });
 button9.addEventListener("click", function () {
-  if (colorToggle % 2 == 0) {
+  if (colorToggle % 2 == 0 && b9 == undefined) {
     b9 = "x";
-  } else {
+  } else if (b9 == undefined) {
     b9 = "o";
   }
   rowArray = [

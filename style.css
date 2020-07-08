@@ -4,12 +4,29 @@
     transition: 0.5s;
 }
 body{
-    height: 100vh;
+height: 100vh;
+}
+body,.game{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
+.game{
+    box-sizing: border-box;
+    max-height: 480px;
+    min-height: 480px;
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+}
+#title{
+    position: absolute;
+    top:30px;
+    box-sizing: border-box;
+}
+
 .canvas{
     display: flex;
     justify-content: center;
@@ -17,8 +34,10 @@ body{
     flex-direction: column;
     background-color: white;
     width: 500px;
+    min-width: 100px;
     padding:1px;
     margin:1em;
+    box-sizing: border-box;
     position: relative;
 }
 .canvas div{
@@ -62,6 +81,9 @@ body{
     width: 300px;
     text-align: center;
     border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
 }
 #reset:hover{
     background-color: rgb(209, 0, 0);
